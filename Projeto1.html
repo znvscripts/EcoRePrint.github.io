@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoRePrint Studio</title>
+    <link rel="icon" href="image/Eco1.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="max-width">
+            <div class="logo">
+                <a href="hub.html">
+                    EcoRePrint<span> Studio</span>
+                </a>
+            </div>
+            <div class="menu-btn" onclick="toggleMenu()">&#9776;</div>
+            <div class="menu">
+                <li><button onclick="location.href='hub.html'">Home</button></li>
+                <li><button onclick="location.href='Sobre.html'">Sobre Nós</button></li>
+                <li class="dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown()">Projetos</button>
+                    <div class="dropdown-content" id="dropdownContent">
+                        <button onclick="location.href='Projeto.html'">Projeto #1</button>
+                        <button onclick="location.href='Projeto1.html'">Projeto #2</button>
+                    </div>
+                </li>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="content">
+        <div class="card-container">
+            <div class="card">
+                <div class="card2">
+                    <div class="Especial">
+                    <img src="image/Tabua.jpg" alt="Descrição da Imagem 1">
+                    <h2 class="title">Impresora 3D</h2>
+                    <p class="description">Impresora desmontada</p>
+                </div>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card2">
+                    <div class="Especial">
+                    <img src="image/impresora.jpg" alt="Descrição da Imagem 2">
+                    <h2 class="title">Impresora 3D</h2>
+                    <p class="description">Impresora 3D a imprimir</p>
+                </div>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card2">
+                    <div class="Especial">
+                    <img src="image/impresora_com_filamentoEco.jpg" alt="Descrição da Imagem 3">
+                    <h2 class="title">Impresora 3D</h2>
+                    <p class="description">Impresora 3D a imprimir com filamento de um garrafa de plastico</p>
+                    </div>
+                </div>
+
+            </div>
+    
+            <div class="card">
+                <div class="card2">
+                    <div class="Especial">
+                    <img src="image/Recicladora_a_fazer_filamento.jpg" alt="Descrição da Imagem 3">
+                    <h2 class="title">Recicladora de filamento de plástico</h2>
+                    <p class="description">Recicladora a trabalhar</p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <style>
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center; /* Adicione esta linha */
+            height: 100vh; /* Adicione esta linha */
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            width: 300px;
+            height: 360px;
+            background-image: linear-gradient(163deg, #00ff75 0%, #00ff00 100%);
+            border-radius: 20px;
+            transition: all .3s;
+            display: flex;
+            flex-direction: column; /* Adicione esta linha */
+            justify-content: center; /* Adicione esta linha */
+            align-items: center; /* Adicione esta linha */
+            text-align: center; /* Adicione esta linha */
+        }
+
+        .card2 {
+            width: 300px;
+            height: 360px;
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            transition: all .2s;
+        }
+
+        .card2:hover {
+            transform: scale(0.98);
+            border-radius: 20px;
+        }
+        .card2 img {
+            max-width: 80%; /* Definindo a largura máxima da imagem como 100% */
+            max-height: 80%; /* Definindo a altura máxima da imagem como 100% */
+            object-fit: contain; /* Mantendo a proporção da imagem */
+            border-radius: 20px;
+        }
+
+
+        video {
+            max-width: 100%; /* Definindo a largura máxima da imagem como 100% */
+            height: auto; /* Mantendo a proporção da imagem */
+            display: block; /* Corrigindo possível espaço extra na parte inferior da imagem */
+        }
+
+        .card:hover {
+            box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+        }
+
+        .card2 h2.title {
+            margin-top: 5px;
+    color: #ffffff; /* Cor do título */
+    font-family: Arial, sans-serif; /* Fonte do título */
+    font-size: 20px; /* Tamanho da fonte do título */
+}
+
+.card2 p.description {
+    margin-top: 5px;
+    color: #ffffff; /* Cor da descrição */
+    font-family: Arial, sans-serif; /* Fonte da descrição */
+    font-size: 14px; /* Tamanho da fonte da descrição */
+}
+.Especial {
+    margin-top: 55px;
+}
+        
+    </style>
+
+<script src="script.js"></script>
+</body>
+</html>

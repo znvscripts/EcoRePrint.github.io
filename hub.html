@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoRePrint Studio</title>
+    <link rel="icon" href="image/Eco1.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="max-width">
+            <div class="logo">
+                <a href="hub.html">
+                    EcoRePrint<span> Studio</span>
+                </a>
+            </div>
+            <div class="menu-btn" onclick="toggleMenu()">&#9776;</div>
+            <div class="menu">
+                <li><button onclick="location.href='hub.html'">Home</button></li>
+                <li><button onclick="location.href='Sobre.html'">Sobre Nós</button></li>
+                <li class="dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown()">Projetos</button>
+                    <div class="dropdown-content" id="dropdownContent">
+                        <button onclick="location.href='Projeto.html'">Projeto #1</button>
+                        <button onclick="location.href='Projeto1.html'">Projeto #2</button>
+                    </div>
+                </li>
+            </div>
+        </div>
+    </div>
+    
+    <div class="content">
+        <div class="button-container">
+            <div class="buttons">
+                <button class="button" onclick="window.open('https://www.youtube.com/channel/UCTz9v1RWoyo7a38XBv4Ft3A', '_blank')">Youtube</button>
+                <button class="button" onclick="window.open('https://www.esgc.pt/portal/index.php', '_blank')">Escola</button>
+            </div>        
+        </div>
+    </div>
+
+
+<style>
+    body {
+        background-image: url('image/Eco.png');
+        background-size: cover; /* Torna a imagem de fundo responsiva */
+        background-position: center; /* Mantém a imagem centralizada */
+        margin: 0; /* Remove margens padrão do body */
+        padding: 0; /* Remove preenchimento padrão do body */
+        height: 100vh; /* Define a altura do body como 100% da altura da tela */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        flex: 1; /* Faz com que a div ocupe todo o espaço disponível */
+        display: flex;
+        justify-content: center;
+        align-items: flex-end; /* Alinha o conteúdo no final da div */
+    }
+
+    .button-container {
+        background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo com transparência */
+        padding: 20px; /* Espaçamento interno */
+        border-radius: 10px; /* Borda arredondada */
+        margin-bottom: 20px;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: space-between; /* Distribui os botões igualmente */
+        width: 200px; /* Largura dos botões */
+    }
+
+    .buttons button {
+        padding: 10px 20px; /* Espaçamento interno dos botões */
+        background-color: #00ff00; /* Cor de fundo dos botões */
+        color: rgb(0, 0, 0); /* Cor do texto dos botões */
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        font-family: Arial, sans-serif, bold; /* Define a fonte dos botões */
+    }
+
+
+</style>
+<script src="script.js"></script>
+</body>
+</html>
